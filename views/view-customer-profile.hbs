@@ -1,0 +1,23 @@
+<div class="container-view-customer-profile">
+    <form action="/update-customer-profile" method="post">
+        <title><h1>Update customer Details</h1></title><br><br>
+        <input type="text" name="Name" placeholder="Customer Name"><br><br>
+        <input type="text" name="PhoneNo" placeholder="Phone No"><br><br>
+        <input type="text" name="Address" placeholder="Address"><br><br>
+        <input type="text" name="Note" placeholder="Notes"><br><br>
+        <div class="subscriptions-container">
+            <table>
+                {{#each rows}}
+                <tr>
+                    <td>{{this.NewspaperName}}</td>
+                    <td><a href="/delete-subscription/:SubscriptionId">Remove</a></td>
+                </tr>
+                {{/each}}
+                <a href="/add-subscriptions"></a>
+            </table>
+        </div>
+        <div class="btn-container-Update">
+            <input class="btn-update" type="submit" id="update-btn" value="Update">
+        </div>
+    </form>
+</div>

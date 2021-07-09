@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="css/add-customer.css">
+{{!-- {{>header}} --}}
+<div class="container-view-customer">
+    {{!-- <div class="column"> --}}
+    <form action="/add-customer" method="post">
+        <div class="title"><h1>Add Customer</h1></div><br>
+        <input class="field" type="text" name="Name" id="add-customer-name" placeholder="Name"><br><br>
+        <input class="field" type="text" name="Phone" id="add-customer-phone-no" placeholder="Phone No"><br><br>
+        <input class="field" type="text" name="Address" id="add-customer-password" placeholder="Address"><br><br>
+        <input class="field" type="text" name="Note" id="add-customer-note" placeholder="Notes(Optional)"><br><br>
+        <div class="btn-container-add-customer">
+            <input class="btn-add-customer" type="submit" value="Add Customer">
+        </div>
+    </form>
+    {{!-- </div> --}}
+    {{!-- <div class="column">
+        {{>view-customers}}
+    </div> --}}
+</div>

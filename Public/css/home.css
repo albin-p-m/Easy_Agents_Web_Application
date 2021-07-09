@@ -1,0 +1,16 @@
+.container-home{
+    background-color: rgb(199, 194, 164);
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.img-back{
+    background-image: url('../img/newspaper-cover-image.jpg');
+    min-height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

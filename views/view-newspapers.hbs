@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="css/view.css">
+    {{>header}}
+<div class="container-view">
+            {{>add-newspaper}}
+    <div class="view-newspapers-body">
+        <div class="column">
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>Newspaper Name</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </thead>
+            {{#each rows}}
+            <tr>
+                <td>{{this.NewspaperId}}</td>
+                <td>{{this.NewspaperName}}</td>
+                <td>{{this.NewspaperPrice}}</td>
+                <td><a href="/update-newspaper/{{this.NewspaperId}}" id="update">Update</a><a href="/delete-newspaper/{{this.NewspaperId}}" id="delete">Delete</a></td>
+            </tr>
+            {{/each}}
+        </table>
+        </div>
+    </div>
+</div>

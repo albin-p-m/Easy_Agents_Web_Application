@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="css/view.css">
+    {{>header}}
+<div class="container-view">
+    {{>add-users}}
+    <div class="view-customers-body">
+        
+        <div class="column">
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>User Name</th>
+                <th>Phone No</th>
+                <th>Actions</th>
+            </thead>
+            {{#each rows}}
+            <tr>
+                <td>{{this.UserId}}</td>
+                <td>{{this.UserName}}</td>
+                <td>{{this.PhoneNo}}</td>
+                <td>
+                    <a href="/view-distributor-profile/{{this.UserId}}" id="view">View</a>
+                    <a href="/update-distributor/{{this.UserId}}" id="update">Update</a>
+                    <a href="/delete-distributor/{{this.UserId}}" id="delete">Delete</a>
+                    <a href="/assign-customers/{{this.UserId}}" id="assign">Assign</a>
+                </td>
+            </tr>
+            {{/each}}
+        </table>
+        </div>
+    </div>
+</div>

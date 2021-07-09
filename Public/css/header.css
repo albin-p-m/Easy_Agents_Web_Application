@@ -1,0 +1,32 @@
+.nav{
+    background-color: rgb(247, 245, 222);;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+
+li{
+    padding: 0px 20px;
+    margin: 5px 0;
+}
+
+a{
+    text-decoration: none;
+    padding: 6px 20px;
+}
+
+.active{
+    background-color: rgb(184, 171, 103);
+    text-decoration: underline;
+}
+
+a:hover{
+    background-color: rgb(199, 194, 164);
+    text-decoration: underline;
+}
